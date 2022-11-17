@@ -1,6 +1,6 @@
-#Covid status tracker using React 
-react-covid-status-tracker.surge.sh
+# Covid status tracker using React 
 
+Link to the website : https://react-covid-status-tracker.surge.sh/
 
 ## Getting Started with Create React App
 
