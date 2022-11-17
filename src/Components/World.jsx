@@ -8,7 +8,9 @@ export class World extends Component {
     };
   }
   componentDidMount() {
-    Axios.get("https://corona.lmao.ninja/v2/countries").then((response) => {
+    Axios.get(
+      "https://api.apify.com/v2/key-value-stores/tVaYRsPHLjNdNBu7S/records/LATEST"
+    ).then((response) => {
       this.setState({ data: response.data });
     });
   }
@@ -23,19 +25,18 @@ export class World extends Component {
               <td>Total recovered</td>
               <td>Death</td>
             </thead>
-            <tbody>{this.state.data.map((itm,k)=>{
-              return(
-                <tr>
-                  <td>{itm.country}
-                  <img style={{width:'64px', marginLeft:'10px'}} src={itm.countryInfo.flag} alt="" />
-                  </td>
-
-                  <td>{itm.cases}</td>
-                  <td>{itm.recovered}</td>
-                  <td>{itm.deaths}</td>
-                </tr>
-              )
-            })}</tbody>
+            <tbody>
+              {this.state.data.map((itm, k) => {
+                return (
+                  <tr>
+                    <td>{itm.country}</td>
+                    <td>{itm.infected}</td>
+                    <td>{itm.recovered}</td>
+                    <td>{itm.deceased}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
           </table>
         </div>
       </div>

@@ -54,7 +54,7 @@ export class India extends Component {
             <div className="col-md-3">
               <Card
                 className="badge text-bg-success"
-                style={{ width: "18rem" }}
+                style={{ width: "18rem" }} 
               >
                 <Card.Body className="text-center">
                   <Card.Title>Recovered</Card.Title>
