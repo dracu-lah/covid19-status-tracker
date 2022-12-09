@@ -1,4 +1,5 @@
 # Covid status tracker using React 
+![covidtracker](https://user-images.githubusercontent.com/110589548/206756657-bf8307d7-411a-4730-802c-f4116656b974.png)
 
 Link to the website : https://react-covid-status-tracker.surge.sh/
 
